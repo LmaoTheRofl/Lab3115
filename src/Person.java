@@ -9,7 +9,7 @@ public String name;
     public String getName() {
         return name;
     }
-    public void wandering(Place b) {
+    public void wandering(Place b, int value) {
     }
 
     @Override

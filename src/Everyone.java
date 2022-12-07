@@ -2,7 +2,7 @@ public class Everyone implements ISomebody {
     String name = "Все";
     @Override
     public void sell() {
-        System.out.println(","+name + ", у кого были гигантские акции, бросились продавать их");
+        System.out.println(name + ", у кого были гигантские акции, бросились продавать их");
     }
     @Override
     public void staring() {
