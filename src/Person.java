@@ -11,6 +11,9 @@ public String name;
     }
     public void wandering(Place b, int value) {
     }
+    public void promisePrint() {
+
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -25,10 +28,4 @@ public String name;
         return Objects.hash(name);
     }
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                '}';
-    }
 }

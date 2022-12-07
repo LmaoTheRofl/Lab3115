@@ -1,9 +1,12 @@
 public class Newspaper {
     String nameOfNewspaper = "Давилонские юморески";
-    public class Article{
+    public static class Article{
         String name = "статейка";
         public String getName() {
             return name;
+        }
+        public void fixTheCase() {
+            System.out.println("которые должны были быстро поправить дело.");
         }
     }
     public void releaseAnArticle() {

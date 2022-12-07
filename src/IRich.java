@@ -1,4 +1,4 @@
 public interface IRich {
-void buy();
 void  thinkUp();
+void pay(String c);
 }

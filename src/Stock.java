@@ -14,6 +14,11 @@ public class Stock {
     }
     public void reduce() {
         value -= 10;
-        System.out.println("\n" + " акция теперь стоит: " + value);
+        System.out.println(toString());
+    }
+
+    @Override
+    public String toString() {
+        return "по " + value;
     }
 }
