@@ -18,7 +18,14 @@ public class Everyone implements ISomebody {
     }
     @Override
     public void beingDesperate() {
-        System.out.println("Владельцы гигантских акций были в отчаянии");
+        class Mood {
+            String name = "Отчаяние";
+            public String getName() {
+                return name;
+            }
+        }
+        Mood m = new Mood();
+        System.out.println("Владельцы гигантских акций были в " + m.getName());
     }
 
 }

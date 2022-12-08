@@ -9,7 +9,13 @@ public class Hanakonda extends Person implements IRich{
     }
 
     @Override
-    public void pay(String n) {
-       System.out.println( getName() + " уплатил  значительную сумму денег владельцу нескольких давилонских газет господину " + n);
-    }
+    public void pay(Person n) {
+        if (n.getName().equals(name)) {
+            throw new CloneError("Замечены клоны...");
+        }
+        else {
+            System.out.println(getName() + " уплатил  значительную сумму денег владельцу нескольких давилонских газет господину " + n.getName());
+
+        }
+     }
 }
