@@ -23,7 +23,7 @@ public class Zhmurik extends Person implements IRich, IBuy {
 
     @Override
     public Zhmurik buy() {
-        System.out.print("\n" + "Однако богач " + getName() + " закупивший в целях наживы большие количества гигантских акций,");
+        System.out.print("\n" +"\n" + "Однако богач " + getName() + " закупивший в целях наживы большие количества гигантских акций,");
         return this;
     }
 }

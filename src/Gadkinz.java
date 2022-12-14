@@ -5,6 +5,6 @@ public class Gadkinz extends Person {
     @Override
     public void promisePrint() {
         Newspaper.Article a = new Newspaper.Article();
-        System.out.println("\n" + getName() + " пообещал напечатать в своих газетах несколько " + a.getName());
+        System.out.println("\n" + "\n" +getName() + " пообещал напечатать в своих газетах несколько " + a.getName());
     }
 }
