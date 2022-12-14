@@ -4,7 +4,8 @@ public abstract class Person {
 public String name;
 
     public Person(String name) {
-    this.name = name;
+
+        this.name = name;
 }
     public String getName() {
         return name;
@@ -12,6 +13,16 @@ public String name;
     public void wandering(Place b, int value) {
     }
     public void promisePrint() {
+
+    }
+    public void sell() {
+
+    }
+    public void staring() {
+
+    }
+
+    public void beingDesperate() {
 
     }
 

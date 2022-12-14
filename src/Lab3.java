@@ -1,26 +1,27 @@
-import java.util.stream.Stream;
-
 public class Lab3 {
     public static void main(String[] args) throws Throwable {
-        Everyone c = new Everyone();
+       Person c = new Everyone("Все");
 Newspaper n = new Newspaper();
 n.releaseAnArticle();
 c.sell();
 Stock s = new Stock(70);
 Person f = new Skuperfield("Скуперфильд");
-s.startPrice(Place.BARGA);
+s.startPrice(Place.BIRGA);
 for (int i = 0; i<6; i++) {
     s.reduce();
 }
+((Everyone) c).buy();
 f.wandering(Place.PANOPTIKUM, s.getValue());
-c.buy(s.getValue());
+((Everyone) c).buy();
 c.beingDesperate();
 c.staring();
-Stream.of(new Hanakonda("Ханаконда"), new Teftel("Тефтель"), new Zhmurik("Жмурик")).forEach(IRich::thinkUp);
+Person h = new Hanakonda("Ханаконда");
+Person t = new Teftel("Тефтель");
+Person z = new Zhmurik("Жмурик");
 Person gad = new Gadkinz("Гадкинз");
-new Hanakonda("Ханаконда").pay(gad);
-new Teftel("Тефтель").pay(gad);
-new Zhmurik("Жмурик").pay(gad);
+((Hanakonda) h).buy().thinkUp().pay(gad);
+((Teftel) t).buy().thinkUp().pay(gad);
+((Zhmurik) z).buy().thinkUp().pay(gad);
 gad.promisePrint();
 new Newspaper.Article().fixTheCase();
     }

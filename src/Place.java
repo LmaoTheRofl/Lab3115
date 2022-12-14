@@ -1,5 +1,5 @@
 public enum Place {
-    BARGA("давилонской барже"),
+    BIRGA("давилонской бирже"),
     PANOPTIKUM("Паноптикуму");
 
     private String name;

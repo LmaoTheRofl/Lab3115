@@ -1,5 +1,8 @@
-public class Everyone implements ISomebody {
-    String name = "Все";
+public class Everyone extends Person implements IBuy {
+    public Everyone(String name) {
+        super(name);
+    }
+
     @Override
     public void sell() {
         System.out.println(name + ", у кого были гигантские акции, бросились продавать их");
@@ -9,12 +12,9 @@ public class Everyone implements ISomebody {
         System.out.println(name + " видели, что затратили свои деньги впустую и теперь не смогут вернуть их");
     }
     @Override
-    public void buy(int value) {
-        if (value<50) {
+    public Everyone buy() {
         System.out.println("но все равно никто не покупал их.");
-    } else  {
-            System.out.println("все бросились скупать их.");
-        }
+        return new Everyone("Все");
     }
     @Override
     public void beingDesperate() {
