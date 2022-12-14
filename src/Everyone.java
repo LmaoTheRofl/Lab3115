@@ -14,7 +14,7 @@ public class Everyone extends Person implements IBuy {
     @Override
     public Everyone buy() {
         System.out.println("но все равно никто не покупал их.");
-        return new Everyone("Все");
+        return this;
     }
     @Override
     public void beingDesperate() {

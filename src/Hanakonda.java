@@ -6,7 +6,7 @@ public class Hanakonda extends Person implements IRich, IBuy{
     @Override
     public Hanakonda thinkUp() {
         System.out.print(" быстро придумал, что надо делать");
-        return new Hanakonda("Ханаконда");
+        return this;
     }
 
     @Override
@@ -18,12 +18,12 @@ public class Hanakonda extends Person implements IRich, IBuy{
             System.out.print("\n" + getName() + " уплатил  значительную сумму денег владельцу нескольких давилонских газет господину " + n.getName());
 
         }
-        return new Hanakonda("Ханаконда");
+        return this;
      }
 
     @Override
     public Hanakonda buy() {
         System.out.print("\n" + "Однако богач " + getName() + " закупивший в целях наживы большие количества гигантских акций,");
-        return new Hanakonda("Ханаконда");
+        return this;
     }
 }

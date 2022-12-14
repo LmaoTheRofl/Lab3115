@@ -6,7 +6,7 @@ public class Teftel extends Person implements IRich, IBuy {
     @Override
     public Teftel thinkUp() {
         System.out.print(" быстро придумал, что надо делать");
-        return new Teftel("Тефтель");
+        return this;
     }
 
     @Override
@@ -18,12 +18,12 @@ public class Teftel extends Person implements IRich, IBuy {
             System.out.print("\n" + getName()+ " уплатил  значительную сумму денег владельцу нескольких давилонских газет господину " + n.getName());
 
         }
-        return new Teftel("Тефтель");
+        return this;
     }
 
     @Override
     public Teftel buy() {
         System.out.print("\n" + "Однако богач " + getName() + " закупивший в целях наживы большие количества гигантских акций,");
-        return new Teftel("Тефтель");
+        return this;
     }
 }
