@@ -7,7 +7,7 @@ c.sell();
 Stock s = new Stock(70);
 Person f = new Skuperfield("Скуперфильд");
 s.startPrice(Place.BIRGA);
-for (int i = 0; i<6; i++) {
+for (int i = 0; i<((int) (Math.random()*10)); i++) {
     s.reduce();
 }
 ((Everyone) c).buy();
